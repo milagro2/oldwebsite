@@ -13,7 +13,6 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
 ?>
 
 
-
 <!DOCTYPE html>
 <html lang="en">
 
