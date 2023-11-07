@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agile</title>
     <link id="theme-stylesheet" rel="stylesheet" href="light.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stest.css">
 </head>
 
 <body id="divid">
@@ -14,13 +14,13 @@
         <h1>Agile - Scrum</h1>
     </header>
     <div id="navbar"></div>
-    <script>
+    <!-- <script>
         fetch('navbar.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('navbar').innerHTML = data;
             });
-    </script>
+    </script> -->
     <div class="sticky-block">
         <p>Onderdelen</p>
         <ul>
@@ -43,31 +43,8 @@
         <button type="button" onclick="setTheme('Hack')">Hack</button>
     </form>
 
-    <script>
-        function setTheme(theme) {
-            const themeLink = document.getElementById('theme-stylesheet');
-            switch (theme) {
-                case 'Dark':
-                    themeLink.href = 'dark.css';
-                    break;
-                case 'Neon':
-                    themeLink.href = 'neon.css';
-                    break;
-                case 'Hack':
-                    themeLink.href = 'hack.css';
-                    break;
-                default:
-                    themeLink.href = 'light.css';
-            }
-            localStorage.setItem('theme', theme);
-            document.documentElement.className = theme;
-        }
 
-        (function () {
-            const theme = localStorage.getItem('theme') || 'Light';
-            setTheme(theme);
-        })();
-    </script>
+        <script src="theme.js"></script>
 </body>
 
 </html>
