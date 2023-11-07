@@ -36,5 +36,12 @@
             default:
                 themeLink.href = 'light.css';
         }
+        localStorage.setItem('theme', theme);
+        document.documentElement.className = theme;
     }
+
+    (function () {
+        const theme = localStorage.getItem('theme') || 'Light';
+        setTheme(theme);
+    })();
 </script>
