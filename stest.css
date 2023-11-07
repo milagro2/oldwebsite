@@ -165,6 +165,7 @@ html {
 
 /* p  */
 .agdiv p,
+.agprdiv p,
 .manifdiv p,
 .lemudiv p,
 .scrumdiv p,
@@ -532,5 +533,3 @@ img {
         transform: translate(0);
     }
 }
-
-
