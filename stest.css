@@ -546,60 +546,24 @@ img {
 
     .sticky-block {
         top: 20%;
+        font-size: 2.5vw;
+    }
+
+    .agdiv h1,
+    .manifdiv h1,
+    .lemudiv h1,
+    .scrumdiv h1,
+    .sticky-block h1,
+    .agprdiv h1 {
+        font-size: 6vw;
+    }
+
+    .agdiv p,
+    .agprdiv p,
+    .manifdiv p,
+    .lemudiv p,
+    .scrumdiv p {
         font-size: 3vw;
-    }
-
-    /* Adjust the parent container of the image and text div */
-    .agdiv,
-    .manifdiv,
-    .lemudiv,
-    .scrumdiv,
-    .agprdiv {
-        display: flex;
-        flex-wrap: wrap;
-        /* Allow items to wrap to the next line if needed */
-        align-items: stretch;
-        /* Align items along the cross-axis (vertically) */
-        justify-content: center;
-        /* Center the items horizontally */
-    }
-
-    /* Adjust the styles for the image and text div */
-    .agim,
-    .agmaim,
-    .lemum,
-    .scrumfoto,
-    .agprfots {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        /* Center the content horizontally */
-    }
-
-    .agilefot,
-    .manifot,
-    .lemufot,
-    .scrumfot,
-    .agprfot {
-        max-width: 100%;
-        /* Adjust the width of the image to fit within the container */
-        height: auto;
-        background: #f5f5f5;
-        border-radius: 180px;
-    }
-
-    /* Adjust the styles for the text */
-    .ag-text,
-    .agma-text,
-    .lemu-text,
-    .sc-text,
-    .agpr-text {
-        flex: 1;
-        margin: 0 15px;
-        /* Adjust the margin as needed */
-        background-color: #f5f5f5;
-        border-radius: 10px;
-        padding: 20px;
     }
 
     /* Adjust other styles as needed for mobile screens */
