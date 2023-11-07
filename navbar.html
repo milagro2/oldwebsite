@@ -38,28 +38,3 @@
         }
     }
 </script>
-<!-- Include the JavaScript code in your HTML file -->
-<script>
-    function setTheme(themeName) {
-        localStorage.setItem('theme', themeName);
-        document.documentElement.className = themeName;
-    }
-
-    // Function to toggle the theme
-    function toggleTheme() {
-        if (localStorage.getItem('theme') === 'dark') {
-            setTheme('light');
-        } else {
-            setTheme('dark');
-        }
-    }
-
-    // Function to apply the saved theme on reload
-    (function () {
-        if (localStorage.getItem('theme') === 'dark') {
-            setTheme('dark');
-        } else {
-            setTheme('light');
-        }
-    })();
-</script>
