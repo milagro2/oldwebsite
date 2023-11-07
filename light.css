@@ -1,72 +1,579 @@
-/* Light mode styles */
+body,
+ul {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    transition: ease background-color 0.7s;
 
-.sticky-block a {
-    color: black;
-    position: relative;
-}
-
-.sticky-block a:hover {
-    color: #ff3a03;
-}
-
-.sticky-block a::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background: #ff3a03;
-    left: 0;
-    bottom: -5px;
-    transform: scaleX(0);
-    transition: transform 0.5s ease;
-}
-
-.sticky-block a:hover::after {
-    transform: scaleX(1);
-}
-
-.sticky-block p {
-    color: #ff4900b0;
-}
-
-body {
-    background-color: white;
-    color: black;
-}
-
-#texT {
-    background-color: #f4f4f4;
-}
-
-#agpri {
-    background-color: #f4f4f4;
 }
 
 header {
     background: linear-gradient(to right, #881700, #ff6000, #881700);
+    color: #ffffffda;
+    padding: 2%;
+    text-align: center;
+    font-size: 1.3vw;
+    transition: background-color 0.7s ease, color 1s ease;
 }
 
-strong {
-    color: #ff4900b0;
+/* button style ------------------------------------------------------- */
+
+button {
+    background: #5c5c5cc5;
+    color: #ffffffda;
+    font-size: 0.8vw;
+    border-radius: 5px;
+    border: none;
+    padding: 3px 7px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5c5c5c98;
+}
+
+button.selected {
+    background-color: #ff4900b0;
+}
+
+
+/* navbar style ------------------------------------------------------- */
+
+nav {
+    background-color: #53535380;
+    text-align: center;
+    transition: padding 0.3s, position 0, 3s;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0.3%;
+    font-size: 1vw;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
 }
 
 nav a {
-    color: black;
-    position: relative;
+    text-decoration: none;
+    color: #ffffffba;
+    font-weight: bold;
 }
 
-nav a::after {
-    content: '';
-    position: absolute;
+nav li:hover a {
+    color: #ff4800a0;
+    transition: color 0.7s ease;
+}
+
+/* nav to navbar */
+#navbar {
+    transition: ease 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6%;
+}
+
+#navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#navbar li {
+    display: inline;
+    margin-right: 25px;
+}
+
+#navbar .right-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+#navbar.hidden {
+    transform: translateY(-100%);
+}
+
+#navbar.sticky {
+    position: sticky;
+    top: 0;
     width: 100%;
-    height: 2px;
-    background: #ff4900b0;
-    left: 0;
-    bottom: -5px;
-    transform: scaleX(0);
-    transition: transform 0.5s ease;
+    padding: 1% 0;
 }
 
-nav a:hover::after {
-    transform: scaleX(1);
+#navbar .active {
+    font-size: 1.3vw;
+    color: #ff4800a5;
+}
+
+/* navbar style end ------------------------------------------------------- */
+
+.content {
+    padding: 20px;
+    min-height: 300px;
+}
+
+/* sticky-block style ------------------------------------------------------- */
+.sticky-block {
+    position: sticky;
+    top: 7.5%;
+    float: right;
+    height: auto;
+    background-color: #f5f5f5a3;
+    padding: 1%;
+    border-radius: 0 0 0 10px;
+    font-size: 1vw;
+    transition: background-color 0.7s ease, color 1s ease;
+    text-align: center;
+}
+
+.sticky-block p {
+    font-weight: bold;
+    font-size: 1.3vw;
+    /* color: #ff4900b0; */
+}
+
+.sticky-block ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sticky-block li {
+    margin: 10% 0;
+}
+
+.sticky-block a {
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* sticky-block style end --------------------------------------------------- */
+.divid {
+    width: auto;
+    padding: 5% 0 0 0;
+    background-color: #9e9e9e45;
+
+}
+
+/* p  */
+.agdiv p,
+.agprdiv p,
+.manifdiv p,
+.lemudiv p,
+.scrumdiv p,
+.DevOpsdiv p,
+.toolsdiv p,
+.cicddiv p,
+.tododiv p,
+.notesdiv p,
+.donediv p,
+.gesprekdiv p {
+    font-size: 1.3vw;
+    /* transition: ease color 1s; */
+}
+
+/* h1 */
+
+.agdiv h1,
+.manifdiv h1,
+.lemudiv h1,
+.scrumdiv h1,
+.agprdiv h1,
+.benefitdiv h1,
+.DevOpsdiv h1,
+.toolsdiv h1,
+.cicddiv h1,
+.tododiv h1,
+.notesdiv h1,
+.donediv h1,
+.gesprekdiv h1 {
+    font-size: 2vw;
+    color: #ff4900b0;
+}
+
+/* divs */
+.DevOpsdiv,
+.cicddiv,
+.tododiv,
+.notesdiv,
+.donediv,
+.manifdiv,
+.agdiv,
+.scrumdiv,
+.benefitdiv,
+.agprdiv,
+.lemudiv,
+.gesprekdiv {
+    display: flex;
+    align-items: center;
+    padding: 3%;
+    margin: 2%;
+}
+
+.ag-text,
+.agpr-text,
+.sc-text,
+.cc-text,
+.todo-text,
+.notes-text,
+.done-text,
+.devops-text,
+.benefits-text,
+.agma-text,
+.tools-text,
+.lemu-text,
+.gesprek-text {
+    flex: 2;
+    margin: 0 15% 0 0;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 1% 3%;
+    transition: background-color 0.7s ease, color 1s ease;
+}
+
+img {
+    transition: background-color 0.7s ease;
+}
+
+/* .todo-image, */
+
+/* agile part-------------------------------------------------------------- */
+
+.agim {
+    flex: 1;
+    margin-left: -7%;
+}
+
+
+.agilefot {
+    max-width: 70%;
+    height: auto;
+    background: #f5f5f5;
+    border-radius: 180px;
+    margin-left: 36%;
+}
+
+/* end agile part --------------------------------------------------------- */
+/* agile-manifesto part ----------------------------------------------------*/
+
+.agmaim {
+    flex: 1;
+}
+
+.manifot {
+    max-width: 100%;
+    height: auto;
+}
+
+/* end agile-manifesto part ------------------------------------------------*/
+
+/* begin agile principes part --------------------------------------------- */
+
+.agprfots {
+    flex: 1;
+}
+
+
+.agprfot {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5%;
+}
+
+
+.agile-principles ol {
+    list-style-type: decimal;
+    padding-left: 3%;
+    font-size: 1.3vw;
+}
+
+.agile-principles li {
+    margin-bottom: 10px;
+}
+
+/* end agile principes part --------------------------------------------- */
+
+/* lean and mu's part --------------------------------------------- */
+
+
+.lemum {
+    flex: 1;
+}
+
+.lemufot {
+    max-width: 100%;
+    height: auto;
+}
+
+.driemus ol {
+    list-style-type: none;
+    padding-left: 0%;
+    font-size: 1.3vw;
+}
+
+.driemus li {
+    margin-bottom: 10px;
+}
+
+/* end lean and mu's part --------------------------------------------- */
+
+
+/* begin scrum part --------------------------------------------- */
+.scrumfoto {
+    flex: 1;
+
+}
+
+.scrumfot {
+    max-width: 100%;
+    height: auto;
+}
+
+/* end scrum part --------------------------------------------- */
+/* Gespreksverslag page --------------------------------------- */
+
+
+/* Gespreksverslag end --------------------------------------- */
+
+/* Devops part-------------------------------------------------------------------------------------- */
+.devops-img {
+    flex: 1;
+    margin-right: 11%;
+}
+
+.devops-image {
+    max-width: 140%;
+    height: auto;
+    padding: 5%;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+}
+
+
+/* CI/CD part ---------------------------------------------------- */
+.cicdfoto {
+    flex: 1;
+    margin-right: 17%;
+}
+
+
+
+.cicdfot {
+    max-width: 150%;
+    height: auto;
+    padding: 3%;
+    margin-left: -53%;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+}
+
+/* end ci/cd part-------------------------------------- */
+
+/* benefs part----------------------------------------- */
+.benefits-img {
+    flex: 1;
+    margin-right: 17%;
+}
+
+.benefits-image {
+    max-width: 175%;
+    height: auto;
+    padding: 5%;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+}
+
+.benefitdiv ul {
+    list-style-type: disc;
+    padding-left: 3%;
+    font-size: 1.3vw;
+}
+
+/* end benefs part---------------------------------- */
+
+/* tools part--------------------------------------- */
+.toolsdiv {
+    display: flex;
+    align-items: center;
+    padding: 6% 3%;
+    margin: 5%;
+    text-align: right;
+}
+
+.tools-img {
+    flex: 1;
+    margin-right: 17%;
+}
+
+
+.tools-image {
+    max-width: 175%;
+    height: auto;
+    padding: 5%;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+}
+
+/* end tools part--------------------------------------- */
+
+/* to do part ------------------------------------------ */
+.doto-img {
+    flex: 1;
+
+}
+
+.todo-image {
+    max-width: 70%;
+    height: auto;
+    background-color: transparent;
+    border-radius: 15px;
+}
+
+#todo-list {
+    font-size: 1.3vw;
+    list-style-type: none;
+    line-height: 1.7vw;
+}
+
+
+/* side notes part --------------------------------------- */
+
+#notes-list {
+    font-size: 1.3vw;
+    list-style-type: none;
+    line-height: 1.7vw;
+}
+
+/* done part ------------------------------------ */
+#done-list {
+    font-size: 1.3vw;
+    list-style-type: none;
+    line-height: 1.7vw;
+}
+
+/* Welcome home ------------------------------------ */
+
+
+.waviy {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, .2));
+    font-size: 60px;
+}
+
+.waviy span {
+    font-family: 'Alfa Slab One', cursive;
+    position: relative;
+    display: inline-block;
+
+    animation: waviy 2s infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+
+@keyframes waviy {
+
+    0%,
+    40%,
+    100% {
+        transform: translateY(0);
+    }
+
+    20% {
+        transform: translateY(-20px);
+    }
+}
+
+/* glitch text -------------------------------------------------------  */
+
+.glitch-container {
+    perspective: 1000px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glitch-text {
+    font-size: 3rem;
+    color: #00ff00;
+    text-transform: uppercase;
+    position: relative;
+    animation: glitch-animation 1s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-animation {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-5px, 5px);
+    }
+
+    40% {
+        transform: translate(-5px, -5px);
+    }
+
+    60% {
+        transform: translate(5px, 5px);
+    }
+
+    80% {
+        transform: translate(5px, -5px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 5%;
+        font-size: 4vw;
+    }
+
+    nav ul {
+        font-size: 2vw;
+    }
+
+    .sticky-block {
+        top: 2%;
+        font-size: 2.5vw;
+    }
+
+    .agdiv h1,
+    .manifdiv h1,
+    .lemudiv h1,
+    .scrumdiv h1,
+    .sticky-block h1,
+    .agprdiv h1 {
+        font-size: 6vw;
+    }
+
+    .agdiv p,
+    .agprdiv p,
+    .manifdiv p,
+    .lemudiv p,
+    .scrumdiv p {
+        font-size: 3vw;
+    }
+    .agim {
+        margin-left: -19%;
+    }
+    
+    
+    .agilefot {
+        max-width: 90%;
+        margin-left: 70%;
+    }
+
 }
