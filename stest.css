@@ -249,7 +249,7 @@ img {
 
 .agim {
     flex: 1;
-     margin-left: -7%;
+    margin-left: -7%;
 }
 
 
@@ -258,7 +258,7 @@ img {
     height: auto;
     background: #f5f5f5;
     border-radius: 180px;
-     margin-left: 36%;
+    margin-left: 36%;
 }
 
 /* end agile part --------------------------------------------------------- */
@@ -565,6 +565,18 @@ img {
     .lemudiv p,
     .scrumdiv p {
         font-size: 3vw;
+    }
+    .agim {
+        margin-left: -19%;
+    }
+    
+    
+    .agilefot {
+        max-width: 90%;
+        height: auto;
+        background: #f5f5f5;
+        border-radius: 180px;
+        margin-left: 70%;
     }
 
 }
