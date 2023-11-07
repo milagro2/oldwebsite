@@ -37,7 +37,13 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
         ?> -->
         <h1>Agile - Scrum</h1>
     </header>
-
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
     <!-- <?php include 'navbar.php' ?> -->
     <div class="sticky-block">
         <p>Onderdelen</p>
