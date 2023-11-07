@@ -533,3 +533,37 @@ img {
         transform: translate(0);
     }
 }
+
+@media (max-width: 600px) {
+    header {
+        padding: 5%;
+        font-size: 4vw;
+    }
+
+    nav ul {
+        font-size: 2vw;
+    }
+
+    .sticky-block {
+        top: 20%;
+        font-size: 3vw;
+    }
+
+    .agdiv h1,
+    .manifdiv h1,
+    .lemudiv h1,
+    .scrumdiv h1,
+    .agprdiv h1 {
+        font-size: 6vw;
+    }
+
+    .agdiv p,
+    .agprdiv p,
+    .manifdiv p,
+    .lemudiv p,
+    .scrumdiv p {
+        font-size: 3vw;
+    }
+
+    /* Adjust other styles as needed for mobile screens */
+}
