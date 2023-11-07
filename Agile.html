@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
-?>
+?> -->
 
 
 <!DOCTYPE html>
@@ -21,12 +21,12 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agile</title>
     <link rel="stylesheet" href="stest.css">
-    <?php include 'style.php' ?>
+    <!-- <?php include 'style.php' ?> -->
 </head>
 
 <body id="divid">
     <header id="page-top">
-    <?php
+        <!-- <?php
         if (isset($_SESSION['theme']) && $_SESSION['theme'] === 'Hack') {
             echo '<div class="glitch-container">';
             echo '<div class="glitch-text">Agile - Scrum</div>';
@@ -34,11 +34,11 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
         }
         else echo '<h1>Agile - Scrum</h1>';	
             
-        ?>
+        ?> -->
 
     </header>
 
-    <?php include 'navbar.php' ?>
+    <!-- <?php include 'navbar.php' ?> -->
     <div class="sticky-block">
         <p>Onderdelen</p>
         <ul>
@@ -137,7 +137,7 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
             ];
             ?>
 
-            <section class="agile-principles">
+            <!-- <section class="agile-principles">
                 <ol>
                     <?php foreach ($agilePrinciples as $principle): ?>
                         <li>
@@ -145,7 +145,7 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
                         </li>
                     <?php endforeach; ?>
                 </ol>
-            </section>
+            </section> -->
 
 
 
@@ -172,30 +172,22 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
                 <strong>lean</strong> genoemd. Deze manier van werken is bedacht om de
                 <strong>drie Mu's</strong> te voorkomen. <br>Dit zijn:
             </p>
-            <?php
-            $driemus = [
-                "<strong>Muda</strong> staat voor <strong>verspilling</strong>, het zijn activiteiten of processen 
-                die geen waarde toevoegen aan het product of de klant. ",
+            <p>
 
-                "<strong>Mura</strong> staat voor <strong>ongelijkheid</strong>, dus als er bijvoorbeeld het ene
-                moment veel meer werk is dan op het andere moment.",
+                <strong>Muda</strong> staat voor <strong>verspilling</strong>, het zijn activiteiten of processen
+                die geen waarde toevoegen aan het product of de klant.
+            </p>
 
-                "<strong>Muri</strong> staat voor <strong>overbelasting</strong>, dus wanneer er meer werk wordt
-                verwacht dan mogelijk is wat voor stress kan zorgen."
-            ];
-            ?>
+            <p>
+                <strong>Mura</strong> staat voor <strong>ongelijkheid</strong>, dus als er bijvoorbeeld het ene
+                moment veel meer werk is dan op het andere moment.
+            </p>
+            <p>
+                <strong>Muri</strong> staat voor <strong>overbelasting</strong>, dus wanneer er meer werk wordt
+                verwacht dan mogelijk is wat voor stress kan zorgen.
+            </p>
 
-            <section class="driemus">
 
-                <ol>
-                    <?php foreach ($driemus as $mu): ?>
-                        <li>
-                            <?= $mu; ?>
-                        </li>
-                    <?php endforeach; ?>
-                </ol>
-
-            </section>
 
         </div>
     </div>
@@ -229,11 +221,11 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
     <div class="divid"></div>
     <!-- --------------------------------------Scrum end-------------------------------------- -->
     <script src="script.js"></script>
-    <?php if ($theme === 'Hack'): ?>
-        <script src="hack.js"></script>
+    <!-- <?php if ($theme === 'Hack'): ?>
+    <script src="hack.js"></script>
     <?php endif; ?>
+ -->
 
-
-    </body=>
+</body>
 
 </html>
