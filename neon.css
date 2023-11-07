@@ -1,0 +1,124 @@
+/* Neon mode styles */
+
+.sticky-block a {
+    color: #00ff2b;
+    text-shadow: 0 0 5px #f4ff00;
+    position: relative;
+}
+
+.sticky-block a:hover {
+    color: #f4ff00;
+}
+
+.sticky-block a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #f4ff00;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+
+.sticky-block a:hover::after {
+    transform: scaleX(1);
+}
+
+.sticky-block p {
+    color: #f4ff00;
+    text-shadow: 0 0 5px #f4ff00;
+    position: relative;
+}
+
+.sticky-block {
+    background: #0000008f;
+    box-shadow: -2px 3px 12px -1px #ff0081;
+}
+
+nav a {
+    color: red;
+    text-shadow: 0 0 2px red;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #FFA500;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+#navbar a:hover {
+    color: #FFA500;
+    text-shadow: 0px 0px 12px #FFA500;
+}
+
+#navbar .active {
+    color: #FFA500;
+    text-shadow: 0px 0px 12px #FFA500;
+}
+
+#navbar {
+    background-color: #ff008100;
+    box-shadow: 0px 0px 12px #ff0081;
+}
+
+body {
+    background-color: black;
+}
+
+#texT {
+    color: #00ff2b;
+    text-shadow: 0 0 12px #f4ff00;
+    background-color: black;
+}
+
+#cool {
+    color: #00ff2b;
+    text-shadow: 0 0 12px #f4ff00;
+}
+
+#agpri {
+    background-color: #0381ff85;
+}
+
+header {
+    background: black;
+}
+
+h1 {
+    color: #ff0081 !important;
+    text-shadow: 0 0 10px #ff0081;
+}
+
+strong {
+    color: #f4ff00;
+    text-shadow: 0 0 10px #f4ff00;
+}
+
+button {
+    background: #1a1a1a;
+    color: #00ffd0;
+    text-shadow: 0 0 5px #00ffd0;
+}
+
+button.selected {
+    background-color: red;
+    box-shadow: 0 0 6px red;
+}
+
+.divid {
+    background-color: #ff008100;
+    box-shadow: 0px 0px 17px 1px #ffffff;
+}
