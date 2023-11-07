@@ -120,7 +120,7 @@ nav li:hover a {
 /* sticky-block style ------------------------------------------------------- */
 .sticky-block {
     position: sticky;
-    top: 7.5%;
+    top: 8.5%;
     float: right;
     height: auto;
     /* background-color: #f5f5f5a3; */
