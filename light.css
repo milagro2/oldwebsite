@@ -364,7 +364,6 @@ img {
 }
 
 
-
 .cicdfot {
     max-width: 100%;
     height: auto;
@@ -387,10 +386,8 @@ img {
     border-radius: 15px;
 }
 
-.benefitdiv ul {
-    list-style-type: disc;
-    padding-left: 3%;
-    font-size: 1.3vw;
+.benefitdiv p {
+    margin-bottom: -30px;
 }
 
 /* end benefs part---------------------------------- */
