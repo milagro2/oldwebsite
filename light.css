@@ -398,10 +398,6 @@ img {
     border-radius: 15px;
 }
 
-.benefitdiv p {
-    margin-bottom: -30px;
-}
-
 /* end benefs part---------------------------------- */
 
 /* tools part--------------------------------------- */
@@ -552,9 +548,7 @@ img {
         font-size: 2.6vw;
     }
 
-    .benefitdiv p {
-        margin-bottom: -12%;
-    }
+ 
 
     button {
         font-size: 1.5vw;

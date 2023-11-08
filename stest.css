@@ -397,9 +397,7 @@ img {
     border-radius: 15px;
 }
 
-.benefitdiv p {
-    margin-bottom: -4%;
-}
+
 
 /* end benefs part---------------------------------- */
 
@@ -546,14 +544,11 @@ img {
         margin: 0 0;
     }
 
-    .cicddiv,
-    .benefitdiv {
+    .cicddiv {
         font-size: 2.6vw;
     }
 
-    .benefitdiv p {
-        margin-bottom: -12%;
-    }
+
 
     button {
         font-size: 1.5vw;
@@ -591,6 +586,7 @@ img {
     .tododiv p,
     .notesdiv p,
     .donediv p,
+    .benefitdiv p,
     .gesprekdiv p {
         font-size: 3vw;
     }
