@@ -211,6 +211,7 @@ html {
 .benefitdiv,
 .agprdiv,
 .lemudiv,
+.toolsdiv,
 .gesprekdiv {
     display: flex;
     align-items: center;
@@ -230,6 +231,7 @@ html {
 .agma-text,
 .tools-text,
 .lemu-text,
+.tools-text,
 .gesprek-text {
     flex: 2;
     margin: 0 15% 0 0;
@@ -394,14 +396,6 @@ img {
 /* end benefs part---------------------------------- */
 
 /* tools part--------------------------------------- */
-.toolsdiv {
-    display: flex;
-    align-items: center;
-    padding: 6% 3%;
-    margin: 5%;
-    text-align: right;
-}
-
 .tools-img {
     flex: 1;
 }
