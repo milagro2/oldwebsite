@@ -346,13 +346,11 @@ img {
 /* Devops part-------------------------------------------------------------------------------------- */
 .devops-img {
     flex: 1;
-    margin-right: 11%;
 }
 
 .devops-image {
-    max-width: 140%;
+    max-width: 100%;
     height: auto;
-    padding: 5%;
     background-color: #f5f5f5;
     border-radius: 15px;
 }
@@ -361,16 +359,13 @@ img {
 /* CI/CD part ---------------------------------------------------- */
 .cicdfoto {
     flex: 1;
-    margin-right: 17%;
 }
 
 
 
 .cicdfot {
-    max-width: 150%;
+    max-width: 100%;
     height: auto;
-    padding: 3%;
-    margin-left: -53%;
     background-color: #f5f5f5;
     border-radius: 15px;
 }
@@ -380,11 +375,10 @@ img {
 /* benefs part----------------------------------------- */
 .benefits-img {
     flex: 1;
-    margin-right: 17%;
 }
 
 .benefits-image {
-    max-width: 175%;
+    max-width: 100%;
     height: auto;
     padding: 5%;
     background-color: #f5f5f5;
@@ -410,12 +404,11 @@ img {
 
 .tools-img {
     flex: 1;
-    margin-right: 17%;
 }
 
 
 .tools-image {
-    max-width: 175%;
+    max-width: 100%;
     height: auto;
     padding: 5%;
     background-color: #f5f5f5;
