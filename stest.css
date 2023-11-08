@@ -39,7 +39,7 @@ button.selected {
 
 /* navbar style ------------------------------------------------------- */
 
-nav {
+/* nav {
     background-color: #53535380;
     text-align: center;
     transition: padding 0.3s, position 0, 3s;
@@ -108,7 +108,7 @@ nav li:hover a {
 #navbar .active {
     font-size: 1.3vw;
     color: #ff4800a5;
-}
+} */
 
 /* navbar style end ------------------------------------------------------- */
 
