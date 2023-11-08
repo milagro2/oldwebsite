@@ -20,14 +20,14 @@
             <button type="button" onclick="setTheme('Neon')">Neon</button>
             <button type="button" onclick="setTheme('Hack')">Hack</button>
         </form>
+        <script>
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar').innerHTML = data;
+                });
+        </script>
     </div>
-    <script>
-        fetch('navbar.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('navbar').innerHTML = data;
-            });
-    </script>
     <div class="sticky-block">
         <p>Onderdelen</p>
         <ul>
@@ -38,7 +38,7 @@
             <li><a href="#scrum-section">Scrum</a></li>
         </ul>
     </div>
-<!-- contenttttttt -->
+    <!-- contenttttttt -->
 
     <div class="agdiv" id="agile-section">
 
