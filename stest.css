@@ -542,7 +542,11 @@ img {
     }
 
     nav ul {
-        font-size: 2vw;
+        font-size: 3vw;
+    }
+
+    .button {
+        font-size: 1.5vw;
     }
 
     .sticky-block {
