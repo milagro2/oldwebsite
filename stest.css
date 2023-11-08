@@ -545,7 +545,14 @@ img {
         font-size: 2.6vw;
     }
 
+    .devops-img {
+        margin-left: -30%;
+    }
 
+    .devops-image {
+        max-width: 125%;
+        margin-left: 77%;
+    }
 
     button {
         font-size: 1.5vw;
