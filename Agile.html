@@ -16,7 +16,10 @@
             fetch('navbar.html')
                 .then(response => response.text())
                 .then(data => {
-                    document.body.insertAdjacentHTML('afterbegin', data);
+                    const navbarContainer = document.createElement('div');
+                    navbarContainer.innerHTML = data;
+                    const header = document.getElementById('page-top');
+                    header.insertAdjacentElement('afterend', navbarContainer.firstChild);
                 });
         });
     </script>

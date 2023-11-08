@@ -14,7 +14,6 @@ header {
     text-align: center;
     font-size: 1.3vw;
     transition: background-color 0.7s ease, color 1s ease;
-    margin-bottom: 0;
 }
 
 /* button style ------------------------------------------------------- */
@@ -44,7 +43,7 @@ nav {
     background-color: #53535380;
     text-align: center;
     transition: padding 0.3s, position 0, 3s;
-    /* margin-top: 0; */
+
 }
 
 nav ul {
@@ -131,7 +130,7 @@ nav li:hover a {
     font-size: 1vw;
     transition: background-color 0.7s ease, color 1s ease;
     text-align: center;
-    margin-top: 0;
+
 }
 
 .sticky-block p {
