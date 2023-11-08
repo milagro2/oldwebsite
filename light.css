@@ -8,7 +8,7 @@ ul {
 }
 
 header {
-    background: linear-gradient(to right, #881700, #ff6000, #881700);
+    /* background: linear-gradient(to right, #881700, #ff6000, #881700); */
     color: #ffffffda;
     padding: 2%;
     text-align: center;
@@ -43,6 +43,7 @@ nav {
     background-color: #53535380;
     text-align: center;
     transition: padding 0.3s, position 0, 3s;
+
 }
 
 nav ul {
@@ -120,15 +121,16 @@ nav li:hover a {
 /* sticky-block style ------------------------------------------------------- */
 .sticky-block {
     position: sticky;
-    top: 7.5%;
+    top: 6.5%;
     float: right;
     height: auto;
-    background-color: #f5f5f5a3;
+    /* background-color: #f5f5f5a3; */
     padding: 1%;
     border-radius: 0 0 0 10px;
     font-size: 1vw;
     transition: background-color 0.7s ease, color 1s ease;
     text-align: center;
+
 }
 
 .sticky-block p {
@@ -353,20 +355,29 @@ img {
 .devops-image {
     max-width: 100%;
     height: auto;
+    padding: 5%;
     background-color: #f5f5f5;
     border-radius: 15px;
 }
 
 
 /* CI/CD part ---------------------------------------------------- */
+.cicddiv li {
+    list-style: none;
+}
+
+
 .cicdfoto {
     flex: 1;
 }
 
 
+
 .cicdfot {
     max-width: 100%;
     height: auto;
+    padding: 3%;
+    margin-left: -53%;
     background-color: #f5f5f5;
     border-radius: 15px;
 }
@@ -376,6 +387,7 @@ img {
 /* benefs part----------------------------------------- */
 .benefits-img {
     flex: 1;
+
 }
 
 .benefits-image {
@@ -393,6 +405,8 @@ img {
 /* end benefs part---------------------------------- */
 
 /* tools part--------------------------------------- */
+
+
 .tools-img {
     flex: 1;
 }
@@ -526,11 +540,28 @@ img {
     }
 
     nav ul {
-        font-size: 2vw;
+        font-size: 3vw;
+    }
+
+    nav li {
+        margin: 0 0;
+    }
+
+    .cicddiv,
+    .benefitdiv {
+        font-size: 2.6vw;
+    }
+
+    .benefitdiv p {
+        margin-bottom: -12%;
+    }
+
+    button {
+        font-size: 1.5vw;
     }
 
     .sticky-block {
-        top: 2%;
+        top: 4.2%;
         font-size: 2.5vw;
     }
 
@@ -538,8 +569,15 @@ img {
     .manifdiv h1,
     .lemudiv h1,
     .scrumdiv h1,
-    .sticky-block h1,
-    .agprdiv h1 {
+    .agprdiv h1,
+    .benefitdiv h1,
+    .DevOpsdiv h1,
+    .toolsdiv h1,
+    .cicddiv h1,
+    .tododiv h1,
+    .notesdiv h1,
+    .donediv h1,
+    .gesprekdiv h1 {
         font-size: 6vw;
     }
 
@@ -547,14 +585,22 @@ img {
     .agprdiv p,
     .manifdiv p,
     .lemudiv p,
-    .scrumdiv p {
+    .scrumdiv p,
+    .DevOpsdiv p,
+    .toolsdiv p,
+    .cicddiv p,
+    .tododiv p,
+    .notesdiv p,
+    .donediv p,
+    .gesprekdiv p {
         font-size: 3vw;
     }
+
     .agim {
         margin-left: -19%;
     }
-    
-    
+
+
     .agilefot {
         max-width: 90%;
         margin-left: 70%;
