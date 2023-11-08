@@ -1,43 +1,32 @@
-<?php
-session_start();
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (isset($_POST['theme'])) {
-        $_SESSION['theme'] = $_POST['theme'];
-        header("Location: DevOps.php");
-        exit();
-    }
-}
-
-$theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOps</title>
+    <title>Agile</title>
+    <link id="theme-stylesheet" rel="stylesheet" href="light.css">
     <link rel="stylesheet" href="stest.css">
-    <?php include 'style.php' ?>
+
+    <header id="page-top">
+        <h1>DevOps - CI/CD</h1>
+    </header>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    const navbarContainer = document.createElement('div');
+                    navbarContainer.innerHTML = data;
+                    const header = document.getElementById('page-top');
+                    header.insertAdjacentElement('afterend', navbarContainer.firstChild);
+                });
+        });
+    </script>
 </head>
 
 <body id="divid">
 
-    <header id="page-top">
-        <?php
-        if (isset($_SESSION['theme']) && $_SESSION['theme'] === 'Hack') {
-            echo '<div class="glitch-container">';
-            echo '<div class="glitch-text">DevOps - CI/CD</div>';
-            echo '</div>';
-        }
-        else echo '<h1>DevOps - CI/CD</h1>';	
-            
-        ?>
-    </header>
-    <?php include 'navbar.php' ?>
     <div class="sticky-block">
         <p>Onderdelen</p>
         <ul>
@@ -145,27 +134,16 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
     <div class="benefitdiv" id="benefits-section">
         <div class="benefits-text" id="texT">
             <h1>Voordelen van DevOps</h1>
-            <?php
-            $devopsBenefits = [
-                "<strong>Snellere software levering</strong>",
-                "<strong>Betrouwbaardere software</strong>",
-                "<strong>Verbeterde samenwerking tussen teams</strong>",
-                "<strong>Automatisering van herhalende taken</strong>",
-                "<strong>Verkorte uitbrengtijd</strong>",
-                "<strong>Grotere schaalbaarheid en flexibiliteit</strong>",
-                "<strong>Efficiënter gebruik van tools</strong>",
-                "<strong>Continue monitoring en feedback</strong>"
-            ];
-            ?>
-            <section class="devops-benefits">
-                <ul>
-                    <?php foreach ($devopsBenefits as $benefit): ?>
-                        <li>
-                            <?= $benefit; ?>
-                        </li>
-                    <?php endforeach; ?>
-                </ul>
-            </section>
+
+            <strong>Snellere software levering</strong><br>
+            <strong>Betrouwbaardere software</strong><br>
+            <strong>Verbeterde samenwerking tussen teams</strong><br>
+            <strong>Automatisering van herhalende taken</strong><br>
+            <strong>Verkorte uitbrengtijd</strong><br>
+            <strong>Grotere schaalbaarheid en flexibiliteit</strong><br>
+            <strong>Efficiënter gebruik van tools</strong><br>
+            <strong>Continue monitoring en feedback</strong>
+
         </div>
         <div class="benefits-img">
             <img class="benefits-image" src="benefits.png" alt="DevOps Benefits" id="texT">
@@ -188,11 +166,8 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
         </div>
     </div>
     <div class="divid"></div>
-    <footer></footer>
+
     <script src="script.js"></script>
-    <?php if ($theme === 'Hack'): ?>
-        <script src="hack.js"></script>
-    <?php endif; ?>
 </body>
 
 </html>
