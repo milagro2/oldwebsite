@@ -4,19 +4,15 @@ ul {
     padding: 0;
     font-family: sans-serif;
     transition: ease background-color 0.7s;
-
 }
 
 header {
-    background: linear-gradient(to right, #881700, #ff6000, #881700);
     color: #ffffffda;
     padding: 2%;
     text-align: center;
     font-size: 1.3vw;
     transition: background-color 0.7s ease, color 1s ease;
 }
-
-/* button style ------------------------------------------------------- */
 
 button {
     background: #5c5c5cc5;
@@ -35,9 +31,6 @@ button:hover {
 button.selected {
     background-color: #ff4900b0;
 }
-
-
-/* navbar style ------------------------------------------------------- */
 
 nav {
     background-color: #53535380;
@@ -67,7 +60,6 @@ nav li:hover a {
     transition: color 0.7s ease;
 }
 
-/* nav to navbar */
 #navbar {
     transition: ease 0.3s;
     display: flex;
@@ -93,7 +85,6 @@ nav li:hover a {
     align-items: center;
 }
 
-
 #navbar.hidden {
     transform: translateY(-100%);
 }
@@ -110,14 +101,11 @@ nav li:hover a {
     color: #ff4800a5;
 }
 
-/* navbar style end ------------------------------------------------------- */
-
 .content {
     padding: 20px;
     min-height: 300px;
 }
 
-/* sticky-block style ------------------------------------------------------- */
 .sticky-block {
     position: sticky;
     top: 7.5%;
@@ -134,7 +122,6 @@ nav li:hover a {
 .sticky-block p {
     font-weight: bold;
     font-size: 1.3vw;
-    /* color: #ff4900b0; */
 }
 
 .sticky-block ul {
@@ -155,15 +142,12 @@ html {
     scroll-behavior: smooth;
 }
 
-/* sticky-block style end --------------------------------------------------- */
 .divid {
     width: auto;
     padding: 5% 0 0 0;
     background-color: #9e9e9e45;
-
 }
 
-/* p  */
 .agdiv p,
 .agprdiv p,
 .manifdiv p,
@@ -566,11 +550,12 @@ img {
     .scrumdiv p {
         font-size: 3vw;
     }
+
     .agim {
         margin-left: -19%;
     }
-    
-    
+
+
     .agilefot {
         max-width: 90%;
         margin-left: 70%;
