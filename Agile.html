@@ -190,7 +190,15 @@
 
     <div class="divid"></div>
 
+    <script>
+        const theme = localStorage.getItem('theme');
 
+        if (theme === 'Hack') {
+            const script = document.createElement('script');
+            script.src = 'hack.js';
+            document.body.appendChild(script);
+        }
+    </script>
     <script src="theme.js"></script>
     <script src="script.js"></script>
 </body>
