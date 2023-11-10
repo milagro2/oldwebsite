@@ -124,7 +124,7 @@ nav li:hover a {
     top: 6.5%;
     float: right;
     height: auto;
-    /* background-color: #f5f5f5a3; */
+    background-color: #f5f5f5a3;
     padding: 1%;
     border-radius: 0 0 0 10px;
     font-size: 1vw;
@@ -136,7 +136,7 @@ nav li:hover a {
 .sticky-block p {
     font-weight: bold;
     font-size: 1.3vw;
-    /* color: #ff4900b0; */
+    color: #ff4900b0;
 }
 
 .sticky-block ul {
