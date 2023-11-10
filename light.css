@@ -153,6 +153,7 @@ nav li:hover a {
 .sticky-block a {
     text-decoration: none;
     transition: color 0.5s ease;
+    color: black;
 }
 
 html {
