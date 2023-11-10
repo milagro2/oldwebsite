@@ -122,7 +122,6 @@ nav li:hover a {
     top: 6.5%;
     float: right;
     height: auto;
-    background-color: #f5f5f5a3;
     padding: 1%;
     border-radius: 0 0 0 10px;
     font-size: 1vw;
@@ -149,7 +148,9 @@ nav li:hover a {
 .sticky-block a {
     text-decoration: none;
     transition: color 0.5s ease;
+    color: black;
 }
+
 
 html {
     scroll-behavior: smooth;
@@ -367,7 +368,6 @@ img {
 .cicdfoto {
     flex: 1;
 }
-
 
 
 .cicdfot {
