@@ -123,7 +123,14 @@ button.selected {
     box-shadow: 0px 0px 17px 1px #ffffff;
 }
 
-button:active {
-    background-color: #003cffb0;
+
+#navbar .nav-item:hover,
+#navbar .nav-item.active {
+    background-color: #FFA500;
+    box-shadow: 0px 0px 12px #FFA500;
 }
 
+#navbar .nav-item.active a {
+    color: #FFA500 !important;
+    text-shadow: 0px 0px 12px #FFA500;
+}

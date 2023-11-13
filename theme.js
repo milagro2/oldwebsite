@@ -44,4 +44,3 @@ function setTheme(theme) {
     setTheme(theme);
 })();
 
-// 387,80
