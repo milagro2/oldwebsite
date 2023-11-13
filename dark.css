@@ -78,6 +78,3 @@ nav a:hover::after {
 button:active {
     color: red;
 }
-#dark.active {
-    color: aqua;
-}
