@@ -75,6 +75,7 @@ nav a::after {
 nav a:hover::after {
     transform: scaleX(1);
 }
-button:active {
-    color: red;
+
+#navbar .active {
+    color: #ff4800a5;
 }

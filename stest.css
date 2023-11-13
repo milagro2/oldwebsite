@@ -105,7 +105,7 @@ nav li:hover a {
 
 #navbar .active {
     font-size: 1.3vw;
-    color: #ff4800a5;
+    /* color: #ff4800a5; */
 }
 
 /* navbar style end ------------------------------------------------------- */
