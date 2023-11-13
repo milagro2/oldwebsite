@@ -5,32 +5,35 @@ function setTheme(theme) {
     const neonButton = document.getElementById('neon');
     const hackButton = document.getElementById('hack');
 
-    darkButton.classList.remove('active');
-    lightButton.classList.remove('active');
-    neonButton.classList.remove('active');
-    hackButton.classList.remove('active');
-
     switch (theme) {
         case 'Dark':
             themeLink.href = 'dark.css';
             darkButton.classList.add('active');
-            
+            lightButton.classList.remove('active');
+            neonButton.classList.remove('active');
+            hackButton.classList.remove('active');
             break;
         case 'Neon':
             themeLink.href = 'neon.css';
+            darkButton.classList.remove('active');
             neonButton.classList.add('active');
+            lightButton.classList.remove('active');
+            hackButton.classList.remove('active');
             break;
         case 'Hack':
             themeLink.href = 'hack.css';
+            darkButton.classList.remove('active');
+            neonButton.classList.remove('active');
+            lightButton.classList.remove('active');
             hackButton.classList.add('active');
-            const script = document.createElement('script');
-            script.src = 'hack.js';
-            document.body.appendChild(script);
+
             break;
         default:
             themeLink.href = 'light.css';
+            darkButton.classList.remove('active');
+            neonButton.classList.remove('active');
             lightButton.classList.add('active');
-            
+            hackButton.classList.remove('active');
     }
 
     localStorage.setItem('theme', theme);
@@ -41,3 +44,4 @@ function setTheme(theme) {
     const theme = localStorage.getItem('theme') || 'Light';
     setTheme(theme);
 })();
+
