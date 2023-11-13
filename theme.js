@@ -5,7 +5,6 @@ function setTheme(theme) {
     const neonButton = document.getElementById('neon');
     const hackButton = document.getElementById('hack');
 
-    // Remove "active" class from all buttons
     darkButton.classList.remove('active');
     lightButton.classList.remove('active');
     neonButton.classList.remove('active');
@@ -15,9 +14,7 @@ function setTheme(theme) {
         case 'Dark':
             themeLink.href = 'dark.css';
             darkButton.classList.add('active');
-            const script1 = document.createElement('script');
-            script.src = 'script.js';
-            document.body.appendChild(script1);
+            
             break;
         case 'Neon':
             themeLink.href = 'neon.css';
