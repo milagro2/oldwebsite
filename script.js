@@ -9,23 +9,43 @@ window.onscroll = function () {
 
 // scroll to location of button press
 
-window.onload = function () {
-    var scrollPos = sessionStorage.getItem('scrollPos');
-    if (scrollPos) {
-        window.scrollTo(0, scrollPos);
-        sessionStorage.removeItem('scrollPos');
-    }
-};
+// window.onload = function () {
+//     var scrollPos = sessionStorage.getItem('scrollPos');
+//     if (scrollPos) {
+//         window.scrollTo(0, scrollPos);
+//         sessionStorage.removeItem('scrollPos');
+//     }
+// };
 
-document.addEventListener('DOMContentLoaded', function () {
-    var themeButtons = document.querySelectorAll('button[name="theme"]');
-    themeButtons.forEach(function (button) {
-        button.addEventListener('click', function () {
-            sessionStorage.setItem('scrollPos', window.scrollY);
-            history.replaceState(null, null, ' ');
+// document.addEventListener('DOMContentLoaded', function () {
+//     var themeButtons = document.querySelectorAll('button[name="theme"]');
+//     themeButtons.forEach(function (button) {
+//         button.addEventListener('click', function () {
+//             sessionStorage.setItem('scrollPos', window.scrollY);
+//             history.replaceState(null, null, ' ');
+//         });
+//     });
+// });
+
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const currentPage = window.location.pathname.split('/').pop();
+    const navLinks = document.querySelectorAll('.nav-link');
+
+        navLinks.forEach(link => {
+            const linkPage = link.getAttribute('href').split('/').pop();
+    if (linkPage === currentPage) {
+        link.parentNode.classList.add('active');
+            }
         });
     });
-});
+
+
+
+
+
+
 
 
 
