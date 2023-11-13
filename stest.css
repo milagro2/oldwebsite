@@ -103,11 +103,6 @@ nav li:hover a {
     padding: 1% 0;
 }
 
-#navbar .active {
-    font-size: 1.3vw;
-    /* color: #ff4800a5; */
-}
-
 /* navbar style end ------------------------------------------------------- */
 
 .content {

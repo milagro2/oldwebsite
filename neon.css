@@ -65,8 +65,8 @@ nav a:hover::after {
 }
 
 #navbar .active {
-    color: #FFA500;
-    text-shadow: 0px 0px 12px #FFA500;
+    background-color: #ff0000;
+    box-shadow: 0px 0px 12px #ff0000;
 }
 
 #navbar {

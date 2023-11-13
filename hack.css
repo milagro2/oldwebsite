@@ -62,7 +62,8 @@ nav a:hover::after {
 }
 
 #navbar .active {
-    color: #00ff00;
+    color: black;
+    background-color: #00ff00;
 }
 
 #navbar {

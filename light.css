@@ -108,7 +108,7 @@ nav li:hover a {
 
 #navbar .active {
 
-    color: #ff4800a5;
+    background-color: #ff4800a5;
 }
 
 /* navbar style end ------------------------------------------------------- */
