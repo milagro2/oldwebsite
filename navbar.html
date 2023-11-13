@@ -49,8 +49,10 @@
 
         const theme = localStorage.getItem('theme');
 
-      
+        if (theme === 'Hack') {
+            const script = document.createElement('script');
+            script.src = 'hack.js';
+            document.body.appendChild(script);
+        }
     }
-
-
 </script>

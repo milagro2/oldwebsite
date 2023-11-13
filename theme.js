@@ -16,7 +16,7 @@ function setTheme(theme) {
         case 'Neon':
             themeLink.href = 'neon.css';
             darkButton.classList.remove('active');
-            neonButton.classList.add('active');
+            neonButton.classList.add('active'); 
             lightButton.classList.remove('active');
             hackButton.classList.remove('active');
             break;
@@ -26,7 +26,6 @@ function setTheme(theme) {
             neonButton.classList.remove('active');
             lightButton.classList.remove('active');
             hackButton.classList.add('active');
-
             break;
         default:
             themeLink.href = 'light.css';
