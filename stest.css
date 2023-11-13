@@ -17,8 +17,6 @@ header {
 /* button style ------------------------------------------------------- */
 
 button {
-    background: #5c5c5cc5;
-    color: #ffffffda;
     font-size: 0.8vw;
     border-radius: 5px;
     border: none;
@@ -26,9 +24,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #5c5c5c98;
-}
+
 
 button.selected {
     background-color: #ff4900b0;
@@ -59,9 +55,7 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 }
-nav a:active {
-   color: lime;
-}
+
 
 nav li:hover a {
     color: #ff4800a0;
