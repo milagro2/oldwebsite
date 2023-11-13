@@ -15,6 +15,9 @@ function setTheme(theme) {
         case 'Dark':
             themeLink.href = 'dark.css';
             darkButton.classList.add('active');
+            const script1 = document.createElement('script');
+            script.src = 'script.js';
+            document.body.appendChild(script1);
             break;
         case 'Neon':
             themeLink.href = 'neon.css';
@@ -23,7 +26,6 @@ function setTheme(theme) {
         case 'Hack':
             themeLink.href = 'hack.css';
             hackButton.classList.add('active');
-            // Load hack.js dynamically
             const script = document.createElement('script');
             script.src = 'hack.js';
             document.body.appendChild(script);
@@ -31,6 +33,7 @@ function setTheme(theme) {
         default:
             themeLink.href = 'light.css';
             lightButton.classList.add('active');
+            
     }
 
     localStorage.setItem('theme', theme);
