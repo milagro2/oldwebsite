@@ -26,6 +26,9 @@ function setTheme(theme) {
             neonButton.classList.remove('active');
             lightButton.classList.remove('active');
             hackButton.classList.add('active');
+            const script = document.createElement('script');
+            script.src = 'hack.js';
+            document.body.appendChild(script);
             break;
         default:
             themeLink.href = 'light.css';
