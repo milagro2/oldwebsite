@@ -32,7 +32,7 @@ button:hover {
     background-color: #5c5c5c98;
 }
 
-button.selected {
+button:active {
     background-color: #ff4900b0;
 }
 
