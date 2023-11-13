@@ -31,6 +31,10 @@
     background-color: #00000085;
 }
 
+.sticky-block p {
+color: #00ff00;
+}
+
 nav a {
     color: #00ff2b;
     text-shadow: 0 0 2px #00ff2b;
