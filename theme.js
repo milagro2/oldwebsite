@@ -44,21 +44,3 @@ function setTheme(theme) {
     setTheme(theme);
 })();
 
-// Add this to your existing script in navbar.html
-
-(function () {
-    const theme = localStorage.getItem('theme') || 'Light';
-    setTheme(theme);
-
-    // Get the current page URL
-    const currentPage = window.location.pathname.split('/').pop();
-
-    // Add the 'active' class to the corresponding nav item
-    const navItems = document.querySelectorAll('#navbar .nav-item');
-    navItems.forEach(item => {
-        const link = item.querySelector('a');
-        if (link.getAttribute('href') === currentPage) {
-            item.classList.add('active');
-        }
-    });
-})();
