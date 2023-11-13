@@ -33,7 +33,11 @@ button:hover {
 button.selected {
     background-color: #ff4900b0;
 }
-
+#navbar a:active,
+#navbar a.active {
+    color: red;
+   
+}
 
 /* navbar style ------------------------------------------------------- */
 
