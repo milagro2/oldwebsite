@@ -59,6 +59,9 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 }
+nav a:active {
+   color: lime;
+}
 
 nav li:hover a {
     color: #ff4800a0;
