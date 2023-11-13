@@ -1,11 +1,11 @@
 <nav id="navbar">
     <ul>
-        <li><a href="StHome.html" class="nav-link">Home</a></li>
-        <li><a href="Agile.html" class="nav-link">Agile</a></li>
-        <li><a href="DevOps.html" class="nav-link">DevOps</a></li>
-        <li><a href="Gesprek.html" class="nav-link">Gespreksverslag</a></li>
-        <li><a href="ToDo.html" class="nav-link">To do</a></li>
-        <li><a href="about.html" class="nav-link">Game</a></li>
+        <li><a href="StHome.html">Home</a></li>
+        <li><a href="Agile.html">Agile</a></li>
+        <li><a href="DevOps.html">DevOps</a></li>
+        <li><a href="Gesprek.html">Gespreksverslag</a></li>
+        <li><a href="ToDo.html">To do</a></li>
+        <li><a href="about.html">Game</a></li>
     </ul>
 
     <ul class="right-nav">
@@ -55,17 +55,6 @@
             document.body.appendChild(script);
         }
     }
+    src = "hack.js"
 
-
-    document.addEventListener('DOMContentLoaded', function () {
-        const currentPage = window.location.pathname.split('/').pop();
-        const navLinks = document.querySelectorAll('.nav-link');
-
-        navLinks.forEach(link => {
-            const linkPage = link.getAttribute('href').split('/').pop();
-            if (linkPage === currentPage) {
-                link.parentElement.classList.add('active');
-            }
-        });
-    });
 </script>
