@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stageverslag</title>
+    <link id="theme-stylesheet" rel="stylesheet" href="light.css">
+    <link rel="stylesheet" href="stest.css">
+
+    <header id="page-top">
+        <h1>Stageverslag</h1>
+    </header>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    const navbarContainer = document.createElement('div');
+                    navbarContainer.innerHTML = data;
+                    const header = document.getElementById('page-top');
+                    header.insertAdjacentElement('afterend', navbarContainer.firstChild);
+                });
+        });
+    </script>
+</head>
+
+<body id="divid">
+    <div class="sticky-block">
+        <p>Onderdelen</p>
+        <ul>
+            <li><a href="#o-section">o</a></li>
+            <li><a href="#o-section">o</a></li>
+            <li><a href="#o-section">o</a></li>
+            <li><a href="#o-section">o</a></li>
+            <li><a href="#o-section">o</a></li>
+        </ul>
+    </div>
+
+
+    <div class="content">
+
+        <p>Welcome!</p>
+
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+    <script src="theme.js"></script>
+  
+</body>
+
+</html>

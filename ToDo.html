@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <link id="theme-stylesheet" rel="stylesheet" href="light.css">
+    <link rel="stylesheet" href="stest.css">
+
+    <header id="page-top">
+        <h1>ToDo</h1>
+    </header>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    const navbarContainer = document.createElement('div');
+                    navbarContainer.innerHTML = data;
+                    const header = document.getElementById('page-top');
+                    header.insertAdjacentElement('afterend', navbarContainer.firstChild);
+                });
+        });
+    </script>
+</head>
+
+<body id="divid">
+    <div class="sticky-block">
+        <p>Onderdelen</p>
+        <ul>
+            <li><a href="#o-section">o</a></li>
+            <li><a href="#o-section">o</a></li>
+            <li><a href="#o-section">o</a></li>
+            <li><a href="#o-section">o</a></li>
+            <li><a href="#o-section">o</a></li>
+        </ul>
+    </div>
+    <!-- -----------------------------------To do list----------------------------------- -->
+    <div class="tododiv" id="todo-section">
+
+        <div class="todo-text" id="texT">
+            <h1>Wat is er to do?</h1>
+
+            <ul id="todo-list">
+                <li><input type="checkbox">Gespreksverslagen</li>
+                <li><input type="checkbox">Gespreken</li>
+                <li><input type="checkbox">pipeline maken</li>
+                <li><input type="checkbox">use jekyll for github pages</li>
+            </ul>
+        </div>
+        <div class="doto-img">
+            <img class="todo-image" src="todo.png" alt="todo">
+        </div>
+
+    </div>
+
+    <div class="divid"></div>
+
+    <!-- -----------------------------------Side Notes----------------------------------- -->
+    <div class="notesdiv" id="notes-section">
+
+        <div class="notes-text" id="texT">
+            <h1>Side notes</h1>
+
+            <ul id="notes-list">
+                <li>salesforce, commerce cloud en service cloud</li>
+                <li>branch strategie</li>
+                <li>Hey</li>
+            </ul>
+        </div>
+       
+
+    </div>
+
+    <div class="divid"></div>
+
+    <!-- -----------------------------------Done----------------------------------- -->
+    <div class="donediv" id="done-section">
+
+        <div class="done-text" id="texT">
+            <h1>Done</h1>
+
+            <ul id="done-list">
+                <li></li>
+                <li></li>
+                <li>Hey</li>
+            </ul>
+        </div>
+       
+
+    </div>
+
+    <div class="divid"></div>
+
+
+
+    <script src="script.js"></script>
+    <script src="theme.js"></script>
+   
+</body>
+
+</html>
