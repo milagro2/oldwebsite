@@ -52,7 +52,7 @@ header {
 }
 
 strong {
-    color: #ffffffed;
+    color: #ffffff;
 }
 
 nav a {
@@ -78,4 +78,8 @@ nav a:hover::after {
 
 #navbar .active {
     background-color: #ff4800a5;
+}
+
+.divid {
+    background-color: #9e9e9e45;
 }
